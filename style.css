@@ -27,7 +27,8 @@ body {
 }
 
 .signin-background-section1,
-.signin-background-section2 {
+.signin-background-section2,
+.signin-background-section3 {
     width: 50%;
     height: 100vh;
 }
@@ -41,10 +42,21 @@ body {
 
 .signin-background-section2 {
     background-color: rgb(243, 243, 243);
+    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+
+.signin-background-section3 {
+    background-color: rgb(243, 243, 243);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .signin-title {
@@ -58,6 +70,7 @@ body {
     width: 70%;
     padding-top: 10px;
     padding-bottom: 10px;
+    transition-duration: 0.8s;
 }
 
 .signin-input {
@@ -75,4 +88,70 @@ body {
 .signin-label {
     font-size: 14px;
     padding-bottom: 10px;
+}
+
+.signin-button-panel {
+    width: 70%;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-button {
+    background-color: transparent;
+    outline: none;
+    border-style: solid;
+    transition-duration: 0.8s;
+    border-width: 1px;
+    border-color: var(--gray-color);
+    padding: 2px 20px;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.signin-button:hover {
+    border-color: var(--blue-border-shadow);
+    box-shadow: 0px 0px 0px 2px var(--blue-border-shadow);
+    color: var(--blue-color);
+    font-weight: bold;
+    outline: none;
+    transition-duration: 0.8s;
+}
+
+.create-account-label {
+    color: var(--blue-color);
+    font-size: 12px;
+    transition-duration: 0.8s;
+}
+
+.create-account-label:hover {
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.8s;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .signin-background {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .signin-background-section1,
+    .signin-background-section2 {
+        width: 100%;
+        height: 50vh;
+        padding-bottom: 20px;
+    }
+
+    .signin-background-section3 {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
 }
