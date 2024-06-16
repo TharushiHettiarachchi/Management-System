@@ -4,6 +4,7 @@
     --blue-color: #006ee6;
     --blue-border-shadow: #006fe69a;
     --gray-color: rgba(173, 172, 172, 0.392);
+    --gray-light-color: rgba(211, 210, 210, 0.392);
 
 }
 
@@ -141,20 +142,134 @@ body {
 }
 
 .dashboard-section1 {
-    width: 100px;
+    width: 80px;
     height: 100vh;
     background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard-section2 {
-    width: calc(100vw - 100px);
+    width: calc(100vw - 80px);
     height: 100vh;
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.dashboard-button1,
+.dashboard-button2,
+.dashboard-button3,
+.dashboard-button4,
+.dashboard-button5,
+.dashboard-button6,
+.dashboard-button7 {
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
 
+.dashboard-button1:hover,
+.dashboard-button2:hover,
+.dashboard-button3:hover,
+.dashboard-button4:hover,
+.dashboard-button5:hover,
+.dashboard-button6:hover,
+.dashboard-button7:hover {
+    background-color: var(--gray-color);
+}
 
+.dashboard-button1 {
+    background-image: url("Resources/dashboard_side.png");
+}
 
+.dashboard-button2 {
+    background-image: url("Resources/stock\ side.png");
+}
+
+.dashboard-button3 {
+    background-image: url("Resources/supplier_side.png");
+}
+
+.dashboard-button4 {
+    background-image: url("Resources/invoice_side.png");
+}
+
+.dashboard-button5 {
+    background-image: url("Resources/people_side.png");
+}
+
+.dashboard-button6 {
+    background-image: url("Resources/grn_side.png");
+}
+
+.dashboard-button7 {
+    background-image: url("Resources/customer_side.png");
+}
+
+.dashboard-section4 {
+    display: flex;
+    flex-direction: row;
+    width: 72%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.dashboard-chart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: var(--gray-light-color);
+    margin: 5px;
+
+}
+
+.chart-img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.chart-title {
+    color: var(--blue-color);
+    font-size: 14px;
+}
+
+.chart-count {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--blue-color);
+}
+.dashboard-section5{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 72%;
+}
+.alert-body{
+    width: 96%;
+    padding: 10px 10px;
+    padding-left: 15px;
+    border-left-style: solid;
+    border-width: 5px;
+    border-color: var(--blue-border-shadow);
+    background-color: var(--gray-light-color);
+    font-size: 14px;
+}
 
 
 
@@ -191,4 +306,43 @@ body {
         height: auto;
         padding-bottom: 20px;
     }
+    .dashboard-background {
+        flex-direction: column;
+    }
+    .dashboard-section1{
+        width: 100vw;
+        height: 80px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .dashboard-section2{
+        width: 100vw;
+        height: auto;
+    }
+    .dashboard-button1,
+    .dashboard-button2,
+    .dashboard-button3,
+    .dashboard-button4,
+    .dashboard-button5,
+    .dashboard-button6,
+    .dashboard-button7{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .dashboard-section4{
+        flex-direction: column;
+        width: 90%;
+    }
+.dashboard-section5{
+width: 90%;
+margin-bottom: 20px;
+}
+
+
+
+
 }
