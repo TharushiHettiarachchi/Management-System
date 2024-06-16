@@ -1,0 +1,16 @@
+.signin-background{
+height: 100vh;
+width: 100vw;
+}
+.signin-background-section1,
+.signin-background-section2{
+    width: 50%;
+    height: 100vh;
+}
+
+.signin-background-section1{
+    background-image: url("Resources/login_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
