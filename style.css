@@ -19,6 +19,7 @@ body {
     padding: 0;
 }
 
+/*-------------------- LOGIN & CREATE ACCOUNT---------------------- */
 .signin-background {
     height: 100vh;
     width: 100vw;
@@ -131,11 +132,47 @@ body {
     transition-duration: 0.8s;
 }
 
+/*--------------------------------------- DASHBOARD ---------------------*/
+.dashboard-background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-section1 {
+    width: 100px;
+    height: 100vh;
+    background-color: var(--blue-color);
+}
+
+.dashboard-section2 {
+    width: calc(100vw - 100px);
+    height: 100vh;
+    background-color: var(--background-color);
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------RESPONSIVE ---------------------------*/
 @media only screen and (max-width: 600px) {
     .signin-background {
         flex-direction: column;
